@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "redditclone01",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authredditclone01ca00d9a5",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
